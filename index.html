@@ -1,71 +1,114 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>San Joaquin Valley Town Hall</title>
 
-    <link rel="stylesheet" href="c09x_rollovers.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 850px;
+            margin: 0 auto;
+            border: 3px solid #931420;
+        }
+
+        header {
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        header img {
+            float: left;
+            margin-right: 20px;
+        }
+
+        header h1 {
+            padding-top: 10px;
+        }
+
+        header h2 {
+            padding-top: 10px;
+        }
+
+        main {
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        section {
+            width: 560px;
+            float: left;
+        }
+
+        aside {
+            width: 220px;
+            float: right;
+        }
+
+        aside ul {
+            padding-left: 20px;
+        }
+
+        #image1 {
+            background-image: url("../images/sampson_dinosaur.jpg");
+            width: 260px;
+            height: 260px;
+            background-repeat: no-repeat;
+        }
+
+        #image1:hover {
+            background-image: url("../images/sorkin_desk260.jpg");
+        }
+
+        footer {
+            clear: both;
+            text-align: center;
+            padding: 20px;
+            border-top: 3px solid #931420;
+        }
+    </style>
 </head>
 
 <body>
 
     <header>
-        <!-- Add the Town Hall logo -->
+        <img src="images/town_hall_logo.gif" 
+             alt="San Joaquin Valley Town Hall Logo">
 
-        <h2>San Joaquin Valley Town Hall</h2>
-
-        <h3>Celebrating our <span class="shadow">75<sup>th</sup></span> Year</h3>
+        <h1>San Joaquin Valley Town Hall</h1>
+        <h2>Celebrating our 75th Year</h2>
     </header>
 
     <main>
 
         <section>
-            <h1>An Image Rollover Using Background Images</h1>
+            <h2>Guest Speaker</h2>
 
-            <!-- Create the rollover element here -->
-            
+            <div id="image1"></div>
         </section>
 
         <aside>
-            <h2>Guest speakers</h2>
+            <h2>Guest Speakers</h2>
 
-            <h3>October<br>
-                <a href="#">Jeffrey Toobin</a>
-            </h3>
-
-            <!-- Add speaker image -->
-
-            <h3>November<br>
-                <a href="#">Andrew Ross Sorkin</a>
-            </h3>
-
-            <!-- Add speaker image -->
-
-            <h3>January<br>
-                <a href="#">Amy Chua</a>
-            </h3>
-
-            <!-- Add speaker image -->
-
-            <h3>February<br>
-                <a href="#">Scott Sampson</a>
-            </h3>
-
-            <!-- Add speaker image -->
-
-            <h3>
-                <a href="#">Return to Home page</a>
-            </h3>
+            <ul>
+                <li>Jeffrey Toobin</li>
+                <li>Andrew Ross Sorkin</li>
+                <li>Amy Chua</li>
+                <li>Scott Sampson</li>
+            </ul>
         </aside>
 
     </main>
 
     <footer>
-        <p>&copy; 2016, San Joaquin Valley Town Hall, Fresno, CA 93755</p>
+        <p>San Joaquin Valley Town Hall</p>
     </footer>
 
 </body>
 </html>
+
